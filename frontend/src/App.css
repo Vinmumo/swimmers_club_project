@@ -1,0 +1,722 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+
+.row {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navbar{
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  
+}
+.h {
+  font-size: 6vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #f8f8f8;
+}
+.p {
+  font-size: 3vh;
+}
+.hero {
+  margin-top: 18vh;
+  margin-left: 15vh;
+}
+.background {
+  background-image: url("https://wallpapercave.com/wp/wp2046196.jpg");
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  background-color: rgba(247, 247, 247, 0.842);
+  height: 80vh;
+}
+.gallery {
+  margin-top: 18vh;
+  margin-left: 1vh;
+}
+.card {
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1vh;
+  margin-top: 6vh;
+  border-radius: 2vh;
+}
+.card-text {
+  font-size: 1.8vh;
+}
+.card-img-top {
+  width: 100%;
+  border-radius: 2vh;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6vh;
+}
+.h1 {
+  font-size: 6vh;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left {
+  margin-left: 5vh;
+}
+
+.slide-icon {
+  cursor: pointer;
+  font-size: 2em;
+  margin: 0 10px;
+}
+.gallery-image {
+  max-width: 120vh;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ev{
+  background-color: rgba(247, 247, 247, 0.842);
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.join{
+  width: 50rem;
+
+}
+
+  
+
+
+.pjoin{
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+/* Footer.css */
+.footer {
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  color: #000000;
+  padding: 20px 0;
+  margin-top: 10vh;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  /* color: #000000; */
+}
+
+.footer h3 {
+  border-bottom: 2px solid #777;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 10px 0;
+  
+}
+
+.footer ul li a {
+  color: #020101;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #777;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .gallery {
+    padding: 10px;
+  }
+  .slide-icon {
+    font-size: 1.5em;
+  }
+  .h {
+    font-size: 4vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .hero {
+    margin-top: 10vh;
+    margin-left: 10vh;
+  }
+}
+
+
+
+
+
+
+/* event cards */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.events-container {
+  background-color: #fff; /* White background behind the cards */
+  padding: 20px; /* Padding around the events */
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap within the container */
+  justify-content: space-between; /* Space evenly between cards */
+}
+
+.event-card {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust card width for three cards per row with margin */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Adjust border-radius as needed */
+  overflow: hidden;
+  transition: transform 0.2s;
+  margin-bottom: 20px; /* Space between cards */
+  margin-right: 20px; /* Space between cards */
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.btn-primary {
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* background color for register as swimmer and coact */
+.re{
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+}
+
+
+
+
+
+/* registration page */
+.event-registration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.event-details {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.registration-form {
+  width: 450px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.registration-form h2 {
+  text-align: center;
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  margin-top: 10px;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.terms-checkbox {
+  margin-top: 10px;
+}
+
+.registration-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registration-form button:hover {
+  background-color: #e81cff;
+
+  
+}
+
+
+
+
+
+/* swimmerslogin */
+.login-page {
+  width: 400px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.formm {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 400px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.formm input {
+  font-family: "Poppins", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  border-radius: 7px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  
+}
+.button {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #234666;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.button:hover,.button:active,.button:focus {
+  background: #0e2941;
+}
+.formm .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.formm .message a {
+  color: #234666;
+  text-decoration: none;
+}
+.formm .register-form {
+  display: none;
+}
+
+
+.background2 {
+  background-image: url("https://wallpapercave.com/wp/wp2046111.jpg");
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-color: rgba(247, 247, 247, 0.842);
+  
+}
+
+
+/* SwimmersTable.css */
+
+ .swimmers-table-container {
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  
+  background-color: #c5d9f7;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.swimmers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.swimmers-table th,
+.swimmers-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+}
+
+.swimmers-table th {
+  background-color: transparent;
+  color: #333;
+}
+
+.swimmers-table tr:hover {
+  background-color: #7193d3;
+}
+
+/* .swimmers-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}  */
+
+
+.buttons-container {
+  background-color: #c5d9f7; /* Set a background color */
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better look */
+  margin-top: -20px; /* Align with background2 */
+  z-index: 1;
+}
+
+.table-container {
+  background-color: #c5d9f7; /* Set a background color */
+  padding: 20px;
+  /* margin-top: 20px; */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better look */
+}
+/* 
+.swimmers-table-container {
+  margin-top: 20px;
+}
+
+.swimmers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.swimmers-table th, .swimmers-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.swimmers-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+ */
+
+.butt {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 13vh;
+  
+  
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0.6em;
+  margin-top: -0.25em;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.label {
+  position: relative;
+  top: -1px;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: rgba(16, 185, 129, 0.6);
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.butt:hover .transition {
+  width: 14em;
+  height: 14em;
+}
+
+.butt:active {
+  transform: scale(0.97);
+}
+
+
+
+/* about page styles */
+
+.aboutCard {
+  width: 100vh;
+  height: 50vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 40vh;
+  border-radius: 30px;
+  padding: 5vh;
+ }
+ .paragraph{
+  color: white;
+  font-size: 3vh;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+.aboutus{
+  color: rgb(88, 10, 88);
+  font-size: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+
+ }
+ .aboutcontainer{
+  border: 1px solid #fff;
+  margin-top: 5vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  height: 80vh;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+ }    
+ 
+ .goback{
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+  height: 30px;
+  font-size: 1.8vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  left: 73vh;
+  top: 65vh;
+  margin-top: 150px;
+  
+  
+}
+
+.goback::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.goback::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.goback:hover::after {
+  filter: blur(30px);
+}
+
+.goback:hover::before {
+  transform: rotate(-180deg);
+}
+
+.goback:active::before {
+  scale: 0.7;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+/* go back button */
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 900px;
+  margin-top: 150px;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta .span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+
+.del {
+  width: 80px;
+  height: 40px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 12px;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+}
+.del:hover {       
+  background: #315cfd;
+  color: white;
+  font-size: 17px;
+}

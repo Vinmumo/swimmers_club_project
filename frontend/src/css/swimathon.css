@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .watery-background {
+    /* background: url('https://www.transparenttextures.com/patterns/water.png'); */
+    background-color: #e0f7fa;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .form-container p {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .form-container input,
+  .form-container select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-container input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
